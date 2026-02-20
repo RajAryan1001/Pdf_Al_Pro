@@ -15,7 +15,7 @@ This is the frontend of the PDF Chat Platform built with *Next.js, TypeScript, T
  bash
 
 # Clone repository
-git clone https://github.com/test-organization-sheryians/recruitment-client
+git clone [https://github.com/test-organization-sheryians/pdf_talk_client.git]
 
 # Install dependencies
 npm install
