@@ -1,6 +1,6 @@
-# 🚀 Sheryians Recruitment Platform (Frontend)
+# 🚀 PDF Chat Platform (Frontend)
 
-This is the frontend of the Sheryians Recruitment Platform built with *Next.js, TypeScript, Tailwind CSS, and shadcn/ui*.
+This is the frontend of the PDF Chat Platform built with *Next.js, TypeScript, Tailwind CSS, and shadcn/ui*.
 
 ## 📦 Tech Stack
 - [Next.js 14+](https://nextjs.org/)
