@@ -1,2 +1,2 @@
-const a = 123;
-console.log(a);
+// const a = 123;
+// console.log(a);
