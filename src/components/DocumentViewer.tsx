@@ -22,7 +22,7 @@ const DocumentViewer = () => {
 
         {/* Market Volatility Impact - highlighted box */}
         <div className="border-l-4 border-doc-highlight-border bg-doc-highlight rounded-r-md p-5 mb-8 bg-blue-100">
-          <h3 className="text-xl font-bold tracking-tight text-blue-800">
+          <h3 className="text font-bold tracking-tight text-blue-800">
             Market Volatility Impact
           </h3>
           <p className="text-sm leading-relaxed text-doc-fg text-black">

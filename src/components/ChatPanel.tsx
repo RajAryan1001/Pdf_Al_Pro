@@ -18,8 +18,8 @@ const ChatPanel = () => {
       <div className="flex-1 overflow-auto p-4 space-y-4">
         {/* User message */}
         <div className="flex flex-col items-end">
-          <div className="bg-chat-user rounded-xl rounded-tr-sm px-4 py-3 max-w-[85%]">
-            <p className="text-sm text-primary-foreground">
+          <div className="bg-[#0b1f3a]/90 backdrop-blur-sm rounded-tl-xl rounded-bl-xl rounded-br-xl rounded-tr-none px-4 py-3 max-w-[85%]">
+            <p className="text-sm text-white">
               Summarize the risk factors mentioned on page 12.
             </p>
           </div>
@@ -90,30 +90,37 @@ const ChatPanel = () => {
       </div>
 
       {/* Input */}
-      <div className="p-3 border-t border-border">
-        <div className="bg-muted rounded-xl px-4 py-3">
+      <div className="p-3  border-border">
+        <div className="bg-[#111827] rounded-2xl px-4 py-3">
           <input
             type="text"
             placeholder="Ask anything about the report..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-full bg-transparent text-sm text-foreground placeholder:text-muted-foreground outline-none mb-2"
+            className="w-full bg-transparent text-sm text-white placeholder:text-white/50 outline-none mb-2"
           />
+
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <button className="text-muted-foreground hover:text-foreground transition-colors">
+              <button className="text-white/60 hover:text-white transition-colors">
                 <Paperclip className="w-4 h-4" />
               </button>
-              <button className="text-muted-foreground hover:text-foreground transition-colors">
+
+              <button className="text-white/60 hover:text-white transition-colors">
                 <Image className="w-4 h-4" />
               </button>
-              <span className="text-xs text-muted-foreground ml-1">GPT-4 Turbo</span>
+
+              <span className="text-xs text-white/50 ml-1">
+                GPT-4 Turbo
+              </span>
             </div>
-            <button className="w-8 h-8 rounded-full bg-primary flex items-center justify-center hover:opacity-90 transition-opacity">
-              <Send className="w-3.5 h-3.5 text-primary-foreground" />
+
+            <button className="w-9 h-9 rounded-[25%] bg-blue-900 flex items-center justify-center hover:opacity-90 transition-opacity">
+              <Send className="w-4 h-4 text-white rotate-45" />
             </button>
           </div>
         </div>
+
         <p className="text-[10px] text-muted-foreground text-center mt-2">
           AI can make mistakes. Verify important information.
         </p>
